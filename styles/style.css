@@ -13,14 +13,13 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
 }
 
 h1,
@@ -42,8 +41,9 @@ ol {
   list-style: none;
 }
 
-a, button, span {
-  cursor: pointer;  
+a,
+button {
+  cursor: pointer;
 }
 
 /* Кастомный скроллбар */
@@ -56,7 +56,7 @@ a, button, span {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .content {
@@ -76,11 +76,9 @@ a, button, span {
   gap: 26px;
   width: 100%;
   height: 100%;
-  
-}
+  display: flex;
 
-.title {
-  display: block;
+  flex-direction: column;
 }
 
 .search-form {
@@ -91,19 +89,11 @@ a, button, span {
 
 .content__list-container {
   height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.content__details {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  column-gap: 26px;
-  flex-direction: column;
 }
 
 .result__video-container {
@@ -122,11 +112,6 @@ a, button, span {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-
-.content__list-container {
-  display: flex;
   gap: 30px;
 }
 
@@ -150,6 +135,7 @@ a, button, span {
   font-family: Fira Sans Condensed, sans-serif;
   font-weight: 400;
   font-size: 18px;
+  cursor: default;
 }
 
 .title {
@@ -158,6 +144,7 @@ a, button, span {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
+  display: block;
 }
 
 .content__accent {
@@ -166,7 +153,8 @@ a, button, span {
 
 .content__card-link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
+  display: block;
 }
 
 .content__video-card-title {
@@ -199,7 +187,7 @@ a, button, span {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
+}
 
 .search-form__checkbox-list {
   display: flex;
@@ -216,6 +204,7 @@ a, button, span {
   gap: 5px;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -239,7 +228,6 @@ a, button, span {
 .search-form__textfield:focus-visible {
   outline: 1px solid #fff;
 }
-
 
 .search-form__pseudo-checkbox {
   width: 19px;
@@ -271,7 +259,7 @@ a, button, span {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
-  background-color: transparent; 
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -294,7 +282,7 @@ a, button, span {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px; 
+  height: 34px;
   align-self: flex-end;
 }
 
@@ -306,11 +294,6 @@ a, button, span {
 .more-button {
   width: 100%;
   height: 100%;
-
-}
-
-.content__card-link {
-  display: block;
 }
 
 .content__card-link_current {
@@ -338,7 +321,7 @@ a, button, span {
 }
 
 .result__video-container {
-  position: relative; 
+  position: relative;
 }
 
 .content__list-container {
